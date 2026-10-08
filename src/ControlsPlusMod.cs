@@ -1584,7 +1584,7 @@ public sealed class ControlsPlusMod : ModBehaviour
 
         foreach (Slot slot in thing.Slots)
         {
-            if (slot == null)
+            if (slot == null || !slot.IsInteractable)
             {
                 continue;
             }
